@@ -13,6 +13,20 @@ public class Examen_16M_Primo {
 		num = ent.nextInt();
 		
 		
+		if((num%2) != 0){
+			System.out.println("El número no es primo.");
+			
+			System.out.println("Los divisores del número son:");
+			for(int i = 1; i < num; i++) {
+				
+				if((num%i) == 0) {
+					System.out.println(i);
+				}
+			}
+						
+		} else {
+			System.out.println("El número es primo.");
+		}
 
 	}
 
